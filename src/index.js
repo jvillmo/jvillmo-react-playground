@@ -5,8 +5,8 @@ import configureStore from "./store";
 
 import "./styles.css";
 
-import App from "./App";
-import Counter from "./Counter";
+import App from "./components/App";
+import Counter from "./components/Counter";
 
 const rootElement = document.getElementById("root");
 
