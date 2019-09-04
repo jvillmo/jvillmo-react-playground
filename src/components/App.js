@@ -1,6 +1,7 @@
 import React from "react";
 import Counter from "./Counter";
 import ConnectedCounter from "./ConnectedCounter";
+import MoviesList from "./MoviesList";
 
 class App extends React.Component {
   state = { nombre: "a" };
@@ -44,6 +45,8 @@ class App extends React.Component {
 
         <ConnectedCounter />
         {children}
+
+        <MoviesList />
       </>
     );
   }
