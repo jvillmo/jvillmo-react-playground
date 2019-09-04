@@ -59,7 +59,7 @@ export default function Movies(
   switch (action.type) {
     case "LOADMOVIES":
       console.log("action", action);
-      fetchMovies(action.query, action.dispatch);
+      fetchMovies(action.query, action.asyncDispatch);
       return {
         ...state,
         loading: true,

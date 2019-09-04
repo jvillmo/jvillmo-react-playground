@@ -102,7 +102,7 @@ const mapStateToProps = ({ movies }) => {
 const mapDispatchToProps = dispatch => {
   return {
     loadMovies: query => {
-      dispatch({ type: `LOADMOVIES`, dispatch, query });
+      dispatch({ type: `LOADMOVIES`, query });
     }
   };
 };
