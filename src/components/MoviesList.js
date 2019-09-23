@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import CounterWithHooks from "./CounterWithHooks";
 
 class MoviesList extends React.Component {
   constructor(props) {
@@ -49,6 +50,7 @@ class MoviesList extends React.Component {
           }}
           placeholder="Ingrese aqui la película que desea buscar"
         />
+        <CounterWithHooks />
 
         <button variant="primary" onClick={this.LookupForMovies}>
           Load Movies

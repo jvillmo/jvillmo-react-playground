@@ -8,6 +8,8 @@ import "./styles.css";
 import App from "./components/App";
 import Counter from "./components/Counter";
 
+import CounterWithHooks from "./components/CounterWithHooks";
+
 const rootElement = document.getElementById("root");
 
 const initialState = { count: 1000 };
@@ -36,6 +38,8 @@ class root extends React.Component {
           nombre="Jorge 1"
           superClick={this.handleSuperClick}
         >
+          WITH HOOK 5
+          <CounterWithHooks />
           <div> para que no digan que no hay nada en medio </div>
           ---- [hiJO{" "}
           <Counter {...this.props} counter={this.state.counterCounter} /> ]
